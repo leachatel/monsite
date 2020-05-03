@@ -1,0 +1,147 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next", Helvetica, sans-serif;
+}
+
+/* Ma nav */
+
+.fullpagemenu{
+  top:-100%;
+  left:0;
+  width: 100%;
+  height:100%;
+  justify-content: center;
+  align-items: center;transition: 0.5s;
+}
+
+.fullpagemenu.active{
+  display: flex;
+  top:100%;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  background-color: black;
+}
+
+.nav ul{
+  position: relative;
+}
+
+.nav ul li{
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.nav ul li a{
+  position: relative;
+  color:#fff;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  padding-top: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.nav ul li a:before{
+  content: attr(data-text);
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  color: #fff;
+}
+
+.nav ul li:hover a {
+  transform: translateY(-100%);
+  color:#fff;
+}
+
+.menuicon{
+  position: fixed;
+  top:20px;
+  right:20px;
+  width: 40px;
+  background: #fff
+  background-size: 40px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.menuicon.active{
+  cursor:pointer;
+  background-repeat: no-repeat;
+}
+
+/*Code CSS pour mon scroll infinit*/
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  min-height: 300px;
+  max-height: 1200px;
+  height: 100%;
+}
+
+::scrollbar {
+  display: none;
+}
+
+
+
+body {
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+.texte {
+  background: #FF4136;
+}
+.accueil {
+  background: black;
+}
+.works {
+  background: #0074D9;
+}
+.contact {
+  background: rebeccapurple;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon site - Léa</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+<body>
+
+<main class="Loop js-loop">
+
+  <section class="accueil">
+     <div class="fullpagemenu" id="nav">
+        <div class="nav">
+          <ul>
+            <li><a href="#" data-text="Home">Home</a></li>
+            <li><a href="#" data-text="About">About</a></li>
+            <li><a href="#" data-text="Works">Works</a></li>
+            <li><a href="#" data-text="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <span class="menuicon" id="toggle" onclick="menuToggle()">
+          <a href=" " ><img src="images/svg/menu_papier_toilette.svg" alt="nomImage"  border="0"
+          onmouseover="this.src='images/svg/menu_papier_toilette_over.svg'"
+          onmouseout="this.src='images/svg/menu_papier_toilette.svg'" /></a>
+        </span>
+       <!-- 
+       <script type="text/javascript">
+          function menuToggle(){
+            var nav = document.getElementById('nav');
+            var toggle = document.getElementById('toggle');
+            nav.classlist.toggle("active")
+            toggle.classList.toogle("active")
+          }
+        </script> 
+      -->
+      </div>
+
+
+  </section>
+
+  <section class="texte">
+    <h1>Texte descriptif</h1>
+  </section>
+
+  <section class="works">
+    <h1>Travaux</h1>
+  </section>
+
+  <section class="contact">
+    <h1>Contact</h1>
+  </section>
+
+
+  <!--
+  These blocks are the same as the first blocks to get that looping illusion going.
+  You need to add clones to fill out a full viewport height.
+  -->
+  <section class="accueil is-clone">
+    <h1>Accueil</h1>
+  </section>
+  
+</main>
+
+ <script src="js/monscript.js"></script>
+  
+</body>
+</html>
+
+
+
+<!-- A minima laisser un court message aux utilisateurs qui n'ont pas javascript d'activer : <noscript> Pour utiliser ce site, merci d'activer Javascript.</noscript> -->
